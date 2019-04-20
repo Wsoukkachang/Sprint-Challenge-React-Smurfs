@@ -9,6 +9,8 @@ class SmurfForm extends Component {
       height: ''
     };
   }
+  
+
 
   addSmurf = event => {
     event.preventDefault();
@@ -19,6 +21,9 @@ class SmurfForm extends Component {
       age: '',
       height: ''
     });
+    
+    console.log("add", this.state)
+    this.props.postSmurf(this.state)
   }
 
   handleInputChange = e => {
@@ -26,6 +31,8 @@ class SmurfForm extends Component {
   };
 
   render() {
+    console.log("Render", this.state);
+
     return (
       <div className="SmurfForm">
         <form onSubmit={this.addSmurf}>
