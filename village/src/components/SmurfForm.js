@@ -34,23 +34,23 @@ class SmurfForm extends Component {
     console.log("Render", this.state);
 
     return (
-      <div className="SmurfForm">
+      <div className="smurfForm">
         <form onSubmit={this.addSmurf}>
           <input
             onChange={this.handleInputChange}
-            placeholder="name"
+            placeholder="Enter Name"
             value={this.state.name}
             name="name"
           />
           <input
             onChange={this.handleInputChange}
-            placeholder="age"
+            placeholder="Enter Age"
             value={this.state.age}
             name="age"
           />
           <input
             onChange={this.handleInputChange}
-            placeholder="height"
+            placeholder="Enter Height"
             value={this.state.height}
             name="height"
           />

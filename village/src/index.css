@@ -3,3 +3,76 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: White;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 15px;
+}
+
+.nav-bar {
+  background-color: MediumBlue;
+  color: White;
+  width: 100%;
+  padding: 20px;
+}
+
+.activeNavLink {
+  background-color: SkyBlue;
+  color: White;
+  border: 2px Solid Grey;
+}
+
+.smurfs {
+  margin: 0 auto;
+  width: 450px;
+}
+
+.smurf {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  padding: 10px;
+  margin: 5px;
+  background-color: SkyBlue;
+  color: White;
+}
+
+.smurf button {
+  width: 20px;
+  height: 100%;
+  background-color: Grey;
+  color: White;
+  border: 0px;
+}
+
+.smurfForm {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+  margin: 0 auto;
+}
+
+.smurfForm input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px;
+  font-size: 16px;
+}
+
+.smurfForm button {
+  width: 100%;
+  font-size: 16px;
+  background-color: SkyBlue;
+  color:White;
+  padding: 10px;
+  margin: 10px;
+  border: 0px;
+}
