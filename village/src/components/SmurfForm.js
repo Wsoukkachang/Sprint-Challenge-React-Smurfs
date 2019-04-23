@@ -34,7 +34,8 @@ class SmurfForm extends Component {
     console.log("Render", this.state);
 
     return (
-      <div className="smurfForm">
+      <div className="SmurfForm">
+        <h1>Smurf Form</h1>
         <form onSubmit={this.addSmurf}>
           <input
             onChange={this.handleInputChange}
