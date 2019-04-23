@@ -31,6 +31,11 @@ a {
 .smurfs {
   margin: 0 auto;
   width: 450px;
+
+}
+
+ul {
+  padding-left: 0px;
 }
 
 .smurf {
@@ -38,7 +43,6 @@ a {
   align-items: center;
   justify-content: space-around;
   width: 100%;
-  padding: 10px;
   margin: 5px;
   background-color: SkyBlue;
   color: White;

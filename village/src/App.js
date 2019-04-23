@@ -45,8 +45,9 @@ class App extends Component {
       .then(res => this.load(res.data))
       .catch(err => console.log(err))
     }
-  
+  // update smurf - stretch 
   updateSmurf = smurf => {
+
     axios.put(`http://localhost:3333/smurfs/${smurf.id}`, smurf)
       .then(res => this.load(res.data))
       .catch(err => console.log(err))
@@ -63,7 +64,7 @@ class App extends Component {
         <NavLink to="/smurf-form" activeClassName="activeNavLink">Add Smurfs</NavLink>
       </div>
 
-        <Route exact path="/" render={props => <Smurfs {...props} smurfs={this.state.smurfs} deleteSmurf={this.deleteSmurf}/>} />
+        <Route exact path="/" render={props => <Smurfs {...props} smurfs={this.state.smurfs} deleteSmurf={this.deleteSmurf} updateSmurf={this.updateSmurf}/>} />
         <Route path="/smurf-form" render={props => <SmurfForm {...props} postSmurf={this.postSmurf} />} />
       </div>
     );
